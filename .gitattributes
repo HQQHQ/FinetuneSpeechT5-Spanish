@@ -1,1 +1,2 @@
 speecht5_finetuned_voxpopuli_nl/model.safetensors filter=lfs diff=lfs merge=lfs -text
+speecht5_finetuned_voxpopuli_nl/checkpoint-4000/model.safetensors filter=lfs diff=lfs merge=lfs -text
