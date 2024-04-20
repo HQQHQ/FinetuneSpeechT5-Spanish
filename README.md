@@ -17,6 +17,11 @@ pip3 install git+https://github.com/huggingface/transformers.git
 ```
 
 
+Or just run the environment file:
+
+```bash
+pip install -r envs.txt
+```
 ## Dataset
 
 The project uses the VoxPopuli dataset, specifically the Spanish portion. The dataset is preprocessed to normalize audio and text features suitable for training.
