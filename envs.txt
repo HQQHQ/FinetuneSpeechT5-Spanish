@@ -1,0 +1,6 @@
+transformers>=4.0.0
+datasets>=1.0.0
+soundfile>=0.10.0
+speechbrain==0.5.16
+accelerate>=0.2.0
+librosa>=0.8.0
