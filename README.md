@@ -2,7 +2,7 @@
 [NYU Steinhardt, Deep Learning for Media Final Project]
 
 
-[Miya Ding](https://github.com/miyading), [Heqi Qiao](https://github.com/HQQHQ), Trevor Freed
+[Miya Ding](https://github.com/miyading), [Heqi Qiao](https://github.com/HQQHQ), [Trevor Freed](https://github.com/tfreed357)
 
 
 This repository hosts the code and resources for fine-tuning a SpeechT5 model for text-to-speech (TTS) tasks using the VoxPopuli dataset. The project leverages the Hugging Face Transformers and Datasets libraries to prepare, process, and train a model capable of generating human-like speech.
