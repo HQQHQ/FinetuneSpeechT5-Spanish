@@ -24,7 +24,9 @@ pip install -r envs.txt
 ```
 ## Dataset
 
-The project uses the [VoxPopuli](https://huggingface.co/datasets/facebook/voxpopuli) dataset, specifically the Spanish portion. The dataset is preprocessed to normalize audio and text features suitable for training.
+The project uses the [VoxPopuli](https://huggingface.co/datasets/facebook/voxpopuli) dataset, specifically the Spanish portion. The dataset is preprocessed to normalize audio and text features suitable for training. Especially using the Mel-Spectrogram to train the model:
+
+![training data example](assets/training_example.png)
 
 ## Model
 
@@ -36,7 +38,18 @@ Training configurations are set up using the Seq2SeqTrainingArguments class from
 
 ## Inference
 
-Post-training, the model can generate spectrograms from text, which are then converted into audible speech using the HiFi-GAN vocoder model. Example scripts demonstrate how to perform this conversion and how to save the output as a WAV file.
+Post-training, the model can generate spectrograms from text:
+
+![generated example](assets/generating_example.png) 
+
+Which are then converted into audible speech using the HiFi-GAN vocoder model. Example scripts demonstrate how to perform this conversion and how to save the output as a WAV file.
+
+And here are some examples:
+1. "Deep Learning For Media" in Spanish:
+   <audio controls>
+    <source src="output_examples/output.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
 
 ## Usage
 
