@@ -24,11 +24,11 @@ pip install -r envs.txt
 ```
 ## Dataset
 
-The project uses the VoxPopuli dataset, specifically the Spanish portion. The dataset is preprocessed to normalize audio and text features suitable for training.
+The project uses the [VoxPopuli](https://huggingface.co/datasets/facebook/voxpopuli) dataset, specifically the Spanish portion. The dataset is preprocessed to normalize audio and text features suitable for training.
 
 ## Model
 
-The base model is microsoft/speecht5_tts, fine-tuned on the processed dataset. A custom data collator handles the batching and padding of training data.
+The base model is [microsoft/speecht5_tts](https://huggingface.co/docs/transformers/en/model_doc/speecht5), fine-tuned on the processed dataset. A custom data collator handles the batching and padding of training data.
 
 ## Training
 
@@ -64,3 +64,8 @@ Audio(speech.numpy(), rate=16000)
 - Remember to use `git lfs pull` to pull the safetensors file for loading the model
 - Run the ***Play_and_Evaluate.ipynb*** file to try the model and see its performance!
 - There are 3 man speakers and 3 woman speakers for you to choose.
+
+
+## Reference
+
+[Text to Speech](https://huggingface.co/docs/transformers/en/tasks/text-to-speech)
