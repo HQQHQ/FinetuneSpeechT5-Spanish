@@ -46,10 +46,10 @@ Which are then converted into audible speech using the HiFi-GAN vocoder model. E
 
 And here are some examples:
 1. "Deep Learning For Media" in Spanish:
-   <audio controls>
-    <source src="output_examples/output.wav" type="audio/wav">
-    Your browser does not support the audio element.
-  </audio>
+<audio controls>
+   <source src="[output_examples/output.wav](https://github.com/HQQHQ/FinetuneSpeechT5-Spanish/blob/main/output_examples/output.wav)" type="audio/wav">
+   Your browser does not support the audio element.
+</audio>
 
 ## Usage
 
