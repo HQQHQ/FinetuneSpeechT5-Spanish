@@ -42,43 +42,42 @@ Post-training, the model can generate spectrograms from text:
 
 ![generated example](assets/generating_example.png) 
 
-Which are then converted into audible speech using the HiFi-GAN vocoder model. Example scripts demonstrate how to perform this conversion and how to save the output as a WAV file.
+Which are then converted into audible speech using the [HiFi-GAN vocoder model](https://huggingface.co/microsoft/speecht5_hifigan). Example scripts demonstrate how to perform this conversion and how to save the output as a WAV file.
 
 And here are some examples:
-1. "Deep Learning For Media" in Spanish:
-<audio controls>
-   <source src="[output_examples/output.wav](https://github.com/HQQHQ/FinetuneSpeechT5-Spanish/blob/main/output_examples/output.wav)" type="audio/wav">
-   Your browser does not support the audio element.
-</audio>
+1. ["*Deep Learning For Media*" in Spanish:"Aprendizaje profundo para medios de comunicación"](output_examples/output.wav)
+2. ["*Music is always the best*" in Spanish:"La música siempre es lo mejor"](output_examples/output1.wav)
+3. ["*Early bed, early to rise*" in Spanish:"Pronto a cama, pronto a levantarse"](output_examples/output2.wav)
+
 
 ## Usage
 
 Example usage of the model to generate speech:  
 
+- Remember to use `git lfs pull` to pull the safetensors file for loading the model
 
 ```
-
 # Load pre-trained model and processor
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech
 processor = SpeechT5Processor.from_pretrained('path_to_processor')
 model = SpeechT5ForTextToSpeech.from_pretrained('path_to_model')
 
+# Load one speaker embeddings
+speaker_embeddings = torch.load("SpeakerMan2.pt")
+
 # Prepare input text and generate spectrogram
-input_text = "Hello, world!"
+input_text = "Aprendizaje profundo para medios de comunicación"
 inputs = processor(text=input_text, return_tensors="pt")
 spectrogram = model.generate_speech(inputs["input_ids"], speaker_embeddings)
 
 # Convert spectrogram to audio and play it
 from IPython.display import Audio
 Audio(speech.numpy(), rate=16000)
-
-
 ```
-- Remember to use `git lfs pull` to pull the safetensors file for loading the model
-- Run the ***Play_and_Evaluate.ipynb*** file to try the model and see its performance!
+- Or you can just run the [***Play_and_Evaluate.ipynb***](Play_and_Evaluate.ipynb) file to try the model and see its performance!
 - There are 3 man speakers and 3 woman speakers for you to choose.
 
 
 ## Reference
 
-[Text to Speech](https://huggingface.co/docs/transformers/en/tasks/text-to-speech)
+[Text to Speech](https://huggingface.co/docs/transformers/en/tasks/text-to-speech) on [huggingface.co](huggingface.co).
