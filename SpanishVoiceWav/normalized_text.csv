@@ -1,0 +1,17 @@
+speaker_id,normalized_text
+9999999,"nuestro equipo encontró una guía muy buena sobre modelos de texto a voz, o tts, en la página de hugging face."
+9999999,este modelo se llama speecht5 y es especial porque aprende de textos y audios al mismo tiempo.
+9999999,esto ayuda al modelo a entender mejor cómo convertir texto en voz.
+9999999,el modelo puede usar diferentes voces gracias a algo que se llama incrustaciones de voz de x-vector.
+9999999,nos inspiramos en un proyecto que usó este modelo con el idioma holandés.
+9999999,ellos usaron datos de un lugar llamado voxpopuli para mejorar el modelo.
+9999999,queremos hacer algo parecido pero con otro idioma europeo de voxpopuli.
+9999999,planeamos usar nuestras propias voces en el modelo para que suene como nosotros.
+9999999,"mejorar un modelo ya hecho, speecht5, para que convierta texto en voz usando un idioma europeo pequeño."
+9999999,"cuando usemos el modelo, pondremos texto en este idioma y el modelo usará la voz que escogimos para hablar."
+9999999,cambiar el código de hugging face para que funcione con otro idioma de europa.
+9999999,asegurarnos de que el modelo pueda entender y mostrar bien los caracteres especiales del idioma.
+9999999,grabar cómo hablamos ese idioma y poner estas grabaciones en el modelo.
+9999999,crear algo que se llama incrustaciones de nuestras voces para usar en el modelo.
+9999999,nos preguntamos si podríamos hacer que el modelo hable chino si usamos datos en chino y pinyin.
+9999999,deberíamos comparar nuestro modelo con otros modelos de texto a voz para ver cuál es mejor?
