@@ -7,6 +7,17 @@
 
 This repository hosts the code and resources for fine-tuning a SpeechT5 model for text-to-speech (TTS) tasks using the VoxPopuli dataset. The project leverages the Hugging Face Transformers and Datasets libraries to prepare, process, and train a model capable of generating human-like speech.
 
+
+## Novelty
+
+We created our own [dataset](SpanishVoiceWav) of Miya's Spanish voice recordings and corresponding texts, following the same structure as the original dataset. And finally, we managed to extract [Miya's speaker embeddings](SpeakerMiya.pt) and generate audio that resembles her voice from any given texts. Here are some examples:
+
+1. [Hugging Face](miyaexamples/miyavoice_huggingface.wav)
+2. [Me llamo Trevor](miyaexamples/miyavoice_trevor.wav)
+3. [Me llamo Lixin](miyaexamples/miyavoice_lixin.wav)
+4. [Me llamo Shuhe](miyaexamples/miyavoice_shuhe.wav)
+
+
 ## Installation
 
 To run the scripts, you need to install several dependencies. Execute the following commands in your terminal to set up the environment:
