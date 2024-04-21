@@ -10,7 +10,7 @@ This repository hosts the code and resources for fine-tuning a SpeechT5 model fo
 
 ## Novelty
 
-We created our own [dataset](SpanishVoiceWav) of Miya's Spanish voice recordings and corresponding texts, following the same structure as the original dataset. And finally, we managed to extract [Miya's speaker embeddings](SpeakerMiya.pt) and generate audio that resembles her voice from any given texts. Here are some examples:
+We created our own [dataset](SpanishVoiceWav) of Miya's Spanish voice recordings and corresponding texts, following the same structure as the original dataset. And finally, we managed to extract [Miya's speaker embeddings](SpeakerMiya.pt) and generate audio that resembles her voice from any simple given texts. Here are some examples:
 
 1. [Hugging Face](miyaexamples/miyavoice_huggingface.wav)
 2. [Me llamo Trevor](miyaexamples/miyavoice_trevor.wav)
