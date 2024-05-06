@@ -110,3 +110,9 @@ Audio(speech.numpy(), rate=16000)
 ## Reference
 
 [Text to Speech](https://huggingface.co/docs/transformers/en/tasks/text-to-speech) on [huggingface.co](huggingface.co).
+
+```
+
+The Lightning Studio compute resource for this project was provided by Lightning AI. 
+
+```
